@@ -40,24 +40,21 @@ void	ft_sort_params(int argc, char **argv)
 	}
 }
 
-void	ft_putstr(char *str)
-{
-	while (*str != '\0')
-	{
-		write(1, str, 1);
-		str++;
-	}
-}
-
 int	main(int argc, char **argv)
 {
-	int	i;
+	char	*str;
+	int		i;
 
 	ft_sort_params(argc, argv);
 	i = 1;
 	while (i < argc)
 	{
-		ft_putstr(argv[i]);
+		str = argv[i];
+		while (*str != '\0')
+		{
+			write(1, str, 1);
+			str++;
+		}
 		write(1, "\n", 1);
 		i++;
 	}
