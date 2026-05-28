@@ -7,10 +7,10 @@ int	main(int argc, char **argv)
 
 	if (argc > 1)
 	{
-		i = argc;
-		while (i > 1)
+		i = argc - 1;
+		while (i > 0)
 		{
-			str = argv[i - 1];
+			str = argv[i];
 			while (*str != '\0')
 			{
 				write(1, str, 1);
