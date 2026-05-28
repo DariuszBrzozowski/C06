@@ -21,7 +21,7 @@ void	ft_swap(char **s1, char **s2)
 	*s2 = temp;
 }
 
-void	ft_sort_params(int argc, char **argv)
+void	ft_sort_params(int argc, char *argv[])
 {
 	int		i;
 	int		j;
@@ -40,7 +40,7 @@ void	ft_sort_params(int argc, char **argv)
 	}
 }
 
-int	main(int argc, char **argv)
+int	main(int argc, char *argv[])
 {
 	char	*str;
 	int		i;
